@@ -1,0 +1,78 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
+body {
+  background-color: hsl(0, 0%, 86%);
+  margin: 1rem;
+}
+body .container {
+  background-color: white;
+  border-radius: 15px;
+  border-bottom-right-radius: 5rem;
+  margin-top: 5rem;
+  padding: 2rem;
+}
+body .container .date-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+body .container .date-form h5 {
+  margin-bottom: 0;
+  color: hsl(0, 1%, 44%);
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+body .container .date-form input {
+  width: 100%;
+  font-size: 32px;
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 8px;
+  cursor: pointer;
+}
+body .container .date-form input::-webkit-outer-spin-button, body .container .date-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+body .container .date-form input::-moz-placeholder {
+  font-size: 32px;
+}
+body .container .date-form input::placeholder {
+  font-size: 32px;
+}
+body .container .date-form p {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  width: 100%;
+}
+body .container .rule {
+  margin-top: 3rem;
+}
+body .container .rule img {
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  padding: 1rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+body .container .rule img:hover {
+  background-color: black;
+}
+body .container .result p {
+  font-style: italic;
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+}
+body .container .result span {
+  color: hsl(259, 100%, 65%);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,89 @@
+*{
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+
+body{
+    background-color: hsl(0, 0%, 86%);
+    margin: 1rem;
+
+    .container{
+        background-color: white;
+        border-radius: 15px;
+        border-bottom-right-radius: 5rem;
+        margin-top: 5rem;
+        padding: 2rem;
+
+        .date-form{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+
+            h5{
+                margin-bottom: 0;
+                color: hsl(0, 1%, 44%);
+                font-size: 16px;
+                letter-spacing: 3px;
+            }
+
+            input{
+                width: 100%;
+                font-size: 32px;
+                padding: .5rem;
+                outline: none;
+                border: 1px solid hsl(0, 0%, 86%);
+                border-radius: 8px;
+                cursor: pointer;
+
+                &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                }
+
+                &::placeholder{
+                    font-size: 32px;
+                }
+            }
+
+            p{
+                font-style: italic;
+                font-weight: 400;
+                font-size: 16px;
+                width: 100%;
+            }
+        }
+
+        .rule{
+            margin-top: 3rem;
+
+            img{
+                background-color: hsl(259, 100%, 65%);
+                border-radius: 50%;
+                padding: 1rem;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+                transition: .3s;
+
+                &:hover{
+                    background-color: black;
+                }
+            }
+        }
+
+        .result{
+            p{
+                font-style: italic;
+                font-size: 3rem;
+                font-weight: 800;
+                margin: 0;
+            }
+
+            span{
+                color: hsl(259, 100%, 65%);
+            }
+        }
+    }
+}

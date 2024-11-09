@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculator</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="date-form">
+            <div class="day-cont">
+                <h5 class="day-header">DAY</h5>
+                <input type="text" name="day" id="day" placeholder="DD" minlength="1" maxlength="2" required>
+                <p class="day-msg" style="font-size: 12px; font-style: italic; color: hsl(0, 100%, 67%);"></p>    
+            </div>
+
+            <div class="month-cont">
+                <h5 class="month-header">MONTH</h5>
+                <input type="text" name="month" id="month" placeholder="MM" minlength="1" maxlength="2" required>
+                <p class="month-msg" style="font-size: 12px; font-style: italic; color: hsl(0, 100%, 67%);"></p>    
+            </div>
+
+            <div class="year-cont">
+                <h5 class="year-header">YEAR</h5>
+                <input type="text" name="year" id="year" placeholder="YYYY" minlength="4" maxlength="4" required>
+                <p class="year-msg" style="font-size: 12px; font-style: italic; color: hsl(0, 100%, 67%);"></p>    
+            </div>
+        </div>
+
+        <div class="rule">
+            <hr color="#dcdcdc">
+            <img src="/images/icon-arrow.svg" alt="Arrow" class="img-btn">
+        </div>
+
+        <div class="result">
+            <p id="calc-year"><span>- -</span> years</p>
+            <p id="calc-month"><span>- -</span> months</p>
+            <p id="calc-days"><span>- -</span> days</p>
+        </div>
+
+    </div>
+
+    <script src="/js/style.js"></script>
+</body>
+</html>
