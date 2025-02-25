@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+~<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,23 +11,23 @@
     <link rel="shortcut icon" href="/images/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
-    <div class="container">
+    <div class="container">~
         <div class="date-form">
             <div class="day-cont">
                 <h5 class="day-header">DAY</h5>
-                <input type="text" name="day" id="day" placeholder="DD" minlength="1" maxlength="2">
+                <input type="number" name="day" id="day" placeholder="DD" minlength="1" maxlength="2">
                 <p class="day-msg" style="font-size: 12px; font-style: italic; color: hsl(0, 100%, 67%);"></p>    
             </div>
 
             <div class="month-cont">
                 <h5 class="month-header">MONTH</h5>
-                <input type="text" name="month" id="month" placeholder="MM" minlength="1" maxlength="2">
+                <input type="number" name="month" id="month" placeholder="MM" minlength="1" maxlength="2">
                 <p class="month-msg" style="font-size: 12px; font-style: italic; color: hsl(0, 100%, 67%);"></p>    
             </div>
 
             <div class="year-cont">
                 <h5 class="year-header">YEAR</h5>
-                <input type="text" name="year" id="year" placeholder="YYYY" minlength="4" maxlength="4">
+                <input type="number" name="year" id="year" placeholder="YYYY" minlength="4" maxlength="4">
                 <p class="year-msg" style="font-size: 12px; font-style: italic; color: hsl(0, 100%, 67%);"></p>    
             </div>
         </div>
@@ -38,9 +38,9 @@
         </div>
 
         <div class="result">
-            <p id="calc-year"><span>- -</span> years</p>
-            <p id="calc-month"><span>- -</span> months</p>
-            <p id="calc-days"><span>- -</span> days</p>
+            <p><span id="calc-year">- -</span> years</p>
+            <p><span id="calc-month">- -</span> months</p>
+            <p><span id="calc-days">- -</span> days</p>
         </div>
 
     </div>
