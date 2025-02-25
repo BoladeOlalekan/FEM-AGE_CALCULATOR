@@ -37,6 +37,10 @@ body{
                 cursor: pointer;
                 
 
+                &:hover{
+                    border-color: hsl(259, 100%, 65%);
+                }
+
                 &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
                     -webkit-appearance: none;
                 }

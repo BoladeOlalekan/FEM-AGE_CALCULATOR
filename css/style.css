@@ -35,6 +35,9 @@ body .container .date-form input {
   border-radius: 8px;
   cursor: pointer;
 }
+body .container .date-form input:hover {
+  border-color: hsl(259, 100%, 65%);
+}
 body .container .date-form input::-webkit-outer-spin-button, body .container .date-form input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
