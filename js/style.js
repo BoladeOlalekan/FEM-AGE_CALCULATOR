@@ -96,65 +96,17 @@ function checkYearInput(){
 }
 
 function calculateAge(birthday){
-    //let birthday = (`${day_input.value}/${month_input.value}/${year_input.value}`);
-    //console.log(birthday);
-
     var fullBirthDate = new Date(birthday);
     var ageDiff = Date.now() - fullBirthDate.getTime();
 
     var ageDate = new Date(ageDiff);
-    var years = ageDate.getFullYear() - 1970;
-    var months = ageDate.getMonth();
-    var days = ageDate.getDate() - 1;
+    var years = ageDate.getUTCFullYear() - 1970;
+    var months = ageDate.getUTCMonth();
+    var days = ageDate.getUTCDate() - 1;
 
     yearOtp.textContent= years;
     monthOtp.textContent= months;
     dayOtp.textContent= days;
-
-    /*var fullBirthDate = new Date(birthday);
-    var birthDay = fullBirthDate.getDate();
-    var birthMonth = fullBirthDate.getMonth();
-    var birthYear = fullBirthDate.getFullYear();
-
-    var result = currentYear - birthYear;
-
-    yearOtp.textContent = ("Your year is " + result + "years old.");
-    
-    var years = currentYear - birthYear;
-    var months = currentMonth - birthMonth;
-    var days = currentDay - birthDay;
-
-    if(months < 0 || (months === 0 && days < 0)){
-        years--;
-        if (months === 0){
-            months = 11;
-        } else{
-            months = 12 + months;
-        }
-        days = 30 + days;
-    }
-
-    yearOtp.innerHTML = years;
-    monthOtp.innerHTML = months;
-    dayOtp.innerHTML = days;
-
-    /*let today = new Date();
-    let currentYear = today.getFullYear();
-    let currentMonth = 1 + today.getMonth();
-    let currentDay = today.getDate();
-    const month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-
-    if(day_input > currentDay){
-        currentDay = currentDay + month_days[currentMonth - 1];
-        currentMonth = currentMonth - 1;
-    }
-    if(month_input > currentMonth){
-        currentMonth = currentMonth + 12;
-        currentYear = currentYear - 1;
-    }*/
-
-
-   
 }
 
 submit.addEventListener('click' , function (e) {
@@ -163,43 +115,7 @@ submit.addEventListener('click' , function (e) {
     let month = checkMonthInput();
     let year = checkYearInput();
 
-    if(!day || !month || !year){
-        return false;
-    }
+    if(!day || !month || !year)return;
     let birthday = `${month_input.value}/${day_input.value}/${year_input.value}`;
-    console.log(birthday);
     calculateAge(birthday);
-    console.log(calculateAge());
-
-    typeof (day);
-    typeof (month);
-    typeof (year);
-
-    console.log(typeof(day));
-    console.log(typeof(month));
-    console.log(typeof(year));
-})
-
-
-/*submit.addEventListener('click' , () => {
-    const months = [31,28,31,30,31,30,31,31,30,31,30,31];
-    let today = new Date();
-    let currentYear = today.getFullYear();
-    let currentMonth = today.getMonth() + 1;
-    let currentDay = today.getDate();
-    const isValid = true;
-
-    //Validity for empty and non-empty input
-
-    /*if(day_input.value > 31){
-        day_input.style.borderColor = 'hsl(0, 100%, 67%)';
-        dayHead.style.color = 'hsl(0, 100%, 67%)';
-        dayMsg.innerHTML = 'Must be a valid date';
-        isValid = false;
-        return;
-    }
-    else{
-        alert('You can proceed');
-        isValid = true;
-    }
-})*/
+});
