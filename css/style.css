@@ -11,7 +11,7 @@ body {
 body .container {
   background-color: white;
   border-radius: 15px;
-  border-bottom-right-radius: 5rem;
+  border-bottom-right-radius: 8rem;
   margin-top: 5rem;
   padding: 2rem;
 }
@@ -78,4 +78,35 @@ body .container .result p {
 }
 body .container .result span {
   color: hsl(259, 100%, 65%);
+}
+
+@media screen and (min-width: 750px) {
+  body .container {
+    margin: 12rem;
+  }
+  body .container .date-form {
+    gap: 5px;
+    padding-right: 5rem;
+  }
+  body .container .date-form .day-cont {
+    width: 100%;
+  }
+  body .container .date-form .month-cont {
+    width: 100%;
+  }
+  body .container .date-form .year-cont {
+    width: 100%;
+  }
+  body .container .date-form input {
+    width: 70%;
+  }
+  body .container .rule {
+    padding-right: 2rem;
+  }
+  body .container .rule img {
+    position: relative;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+  }
 }/*# sourceMappingURL=style.css.map */

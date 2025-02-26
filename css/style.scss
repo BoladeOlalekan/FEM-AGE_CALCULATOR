@@ -11,7 +11,7 @@ body{
     .container{
         background-color: white;
         border-radius: 15px;
-        border-bottom-right-radius: 5rem;
+        border-bottom-right-radius: 8rem;
         margin-top: 5rem;
         padding: 2rem;
 
@@ -88,6 +88,44 @@ body{
 
             span{
                 color: hsl(259, 100%, 65%);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 750px){
+    body{
+        .container{
+            margin: 12rem;
+            //padding: 2rem 8rem 2rem 2rem;
+
+            .date-form{
+                gap: 5px;
+                padding-right: 5rem;
+
+                .day-cont{
+                    width: 100%;
+                }
+                .month-cont{
+                    width: 100%;
+                }
+                .year-cont{
+                    width: 100%;
+                }
+
+                input{
+                    width: 70%;
+                }
+            }
+
+            .rule{
+                padding-right: 2rem;
+                img{
+                    position: relative;
+                    top: 50%;
+                    left:100%;
+                    transform: translate(-50%, -50%);
+                }
             }
         }
     }
